@@ -3,6 +3,7 @@ import { StyleSheet, View, Alert } from 'react-native';
 import Constants from 'expo-constants';
 import TopBar from './components/TopBar';
 import SwipeableImage from './components/SwipeableImage';
+import BottomBar from './components/BottomBar';
 import axios from 'axios';
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
           <SwipeableImage user={users[currentIndex]} />
         )}
       </View>
+      <BottomBar />
     </View>
   );
 }
